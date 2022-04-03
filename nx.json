@@ -1,0 +1,19 @@
+{
+  "extends": "@nrwl/workspace/presets/core.json",
+  "npmScope": "nx-stencil",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "cli": {
+    "defaultCollection": "@nxext/stencil"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "MTQ2MjQ0YzEtODE1NC00NmU4LWE2ZmMtZDIzODcwNGNkZDY0fHJlYWQtd3JpdGU="
+      }
+    }
+  }
+}
